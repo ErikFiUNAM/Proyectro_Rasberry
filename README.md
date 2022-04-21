@@ -35,3 +35,9 @@ Palabras clave:
 - Diseño eléctrónico (PCB)
 - Comunicación 
 - Control de Velocidad
+
+
+
+resolucion del problema smBus: 
+https://github.com/johnbryanmoore/VL53L0X_rasp_python/issues/13
+habilitando los ṕuertos i2c de la raspberry. 
