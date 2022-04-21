@@ -41,3 +41,4 @@ Palabras clave:
 resolucion del problema smBus: 
 https://github.com/johnbryanmoore/VL53L0X_rasp_python/issues/13
 habilitando los ṕuertos i2c de la raspberry. 
+https://blog.csdn.net/jcfszxc/article/details/123448078
