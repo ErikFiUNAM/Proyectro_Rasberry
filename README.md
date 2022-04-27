@@ -42,3 +42,15 @@ resolucion del problema smBus:
 https://github.com/johnbryanmoore/VL53L0X_rasp_python/issues/13
 habilitando los ṕuertos i2c de la raspberry. 
 https://blog.csdn.net/jcfszxc/article/details/123448078
+
+## 27/04/2022
+
+Se instaló OpenCV en la Raspberry y así mismo se bajo la base móvil del robot de Irene 
+se quitaron Drivers MD25 y se piensa usar el por un momento los motores de estos 
+
+Para instalar openCV y solucionar un problema con Numpy se ocuparon estas fuentes. 
+https://www.piwheels.org/project/opencv-contrib-python/
+https://stackoverflow.com/questions/20518632/importerror-numpy-core-multiarray-failed-to-import
+https://programarfacil.com/blog/vision-artificial/opencv-raspberry-pi/
+
+
