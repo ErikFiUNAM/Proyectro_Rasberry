@@ -82,8 +82,6 @@ o Parámetros del diseño
 ## Autor
 | Iniciales  | Description |
 | ----------:| ----------- |
-| **RICF** | Felipe Rivas Campos [GitHub profile](https://github.com/rivascf) |
-| **EPM**  | Erik Peña Medina [GitHub profile](https://github.com/ErikFiUNAM) |
 | **DMC**  | Diego Méndez Carter [GitHub profile](https://github.com/Laos198) |
 | **MGR-MX** | Mechatronics Research Group, México [GitHub profile](https://github.com/mrg-mx) |
 
