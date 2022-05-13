@@ -1,7 +1,50 @@
 # Proyectro_Rasberry
 
 
-## Borrador Diego
+## 
+
+| Código | Description |
+| ------:| ----------- |
+| ***Asignatura*** | Código del Trabajo o Número de Tarea | 
+| **MRG-C002** | Robótica Móvil - Bobot - Módulo 1 |
+
+## Contenido
+
+- [Objetivo](#objetivo)
+- [Introducción](#introduccion)
+- [Desarrollo](#desarrollo)
+- [Conclusiones](#conclusiones)
+- [Autor](#autor)
+- [Referencias](#referencias)
+- [Bitácora](#bitácora)
+
+
+## Objetivo
+
+
+
+## Introducción
+
+
+## Desarrollo
+
+## Conclusiones
+ 
+
+## Autor
+
+
+| Iniciales  | Description |
+| ----------:| ----------- |
+| **RICF** | Felipe Rivas Campos [GitHub profile](https://github.com/rivascf) |
+| **EPM**  | Erik Peña Medina [GitHub profile](https://github.com/ErikFiUNAM) |
+| **DMC**  | Diego Méndez Carter [GitHub profile](https://github.com/Laos198) |
+| **MGR-MX** | Mechatronics Research Group, México [GitHub profile](https://github.com/mrg-mx) |
+
+
+
+
+## Bitácora
 
 Hoy he llamado al robot "Dofbot"- por lo que me iré refiriendo
 a él de desde ahora con ese nombre. 
