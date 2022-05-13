@@ -44,20 +44,21 @@ programada en Arduino para adaptarlo a una base móvil omnidireccional obteniend
 ## Desarrollo
 Metas del proyecto
 Están relacionadas directamente con las palabras clave citadas al principio del documento, pero el 
-alcance real de este proyecto por los tiempos de realización será en las primeras cinco citadas. En 
-seis semanas, que es el tiempo restante, se debe dejar instalado un sistema funcional en ROS que 
-tendrá un funcionamiento jerárquico para obtener los parámetros de diseño de una base móvil 
-omnidireccional y tener información de su funcionamiento mediante la implementación de la 
+alcance real de este proyecto por los tiempos de realización será en las primeras cinco. En 
+seis semanas, se dejó instalado un sistema funcional en ROS NOETIC que incorpora un paquete dedicado al proyecto, enlazado con otro paquete llamado "vision_opencv" que es el puente entre las imágenes generadas por OpenCV a los mensajes que manda ROS internamente.  
+
+Tiene un funcionamiento jerárquico para obtener los parámetros de diseño de una base móvil 
+omnidireccional y se obtuvo la información de su funcionamiento mediante la implementación de la 
 ingeniería inversa. 
 
 
 Productos 
-- Repositorio de Github 
+o Repositorio de Github 
 o Instrucciones de como se instala ROS en Raspbian 
 o Implementación de la API de Arm_lib
 o Programas Muestra 
-- Topología del diseño del sistema
-- Parámetros del diseño (Qué se necesita)
+o Topología del diseño del sistema
+o Parámetros del diseño 
 
 
 ## Conclusiones
