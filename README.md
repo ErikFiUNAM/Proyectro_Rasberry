@@ -1,4 +1,4 @@
-# Proyectro_Rasberry
+# Proyecto_Rasberry
 
 
 ## 
@@ -20,7 +20,7 @@
 
 
 ## Objetivo
-
+Diseñar un robot omnidireccional mediante el análisis de ingeniería inversa en el DOFBOT y así obtener los parámetros de diseño para la base móvil
 
 ## Introducción
 
