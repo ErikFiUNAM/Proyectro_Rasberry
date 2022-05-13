@@ -42,7 +42,7 @@ cuyo control será realizado en un sistema embebido Raspberry Pi y con una tarje
 programada en Arduino para adaptarlo a una base móvil omnidireccional obteniendo un manipulador móvil. 
 
 ## Desarrollo
-**Metas del proyecto
+Metas del proyecto
 Están relacionadas directamente con las palabras clave citadas al principio del documento, pero el 
 alcance real de este proyecto por los tiempos de realización será en las primeras cinco citadas. En 
 seis semanas, que es el tiempo restante, se debe dejar instalado un sistema funcional en ROS que 
@@ -57,17 +57,25 @@ o Instrucciones de como se instala ROS en Raspbian
 o Implementación de la API de Arm_lib
 o Programas Muestra 
 - Topología del diseño del sistema
-- Parámetros del diseño (Qué se necesita**
+- Parámetros del diseño (Qué se necesita)
+
+
 ## Conclusiones
  
 ## Referencias
 <a id="1">[1]</a> "Choose an architecture | Download". Ubuntu MATE. https://ubuntu-mate.org/download/ (accedido el 13 de mayo de 2022).
 <a id="2">[2]</a> "Noetic/Installation/Ubuntu - ROS wiki". Documentation - ROS Wiki. http://wiki.ros.org/noetic/Installation/Ubuntu (accedido el 13 de mayo de 2022).
+
 <a id="3">[3]</a> "ROS/Tutorials/CreatingPackage - ROS wiki". Documentation - ROS Wiki. http://wiki.ros.org/ROS/Tutorials/CreatingPackage (accedido el 13 de mayo de 2022).
+
 <a id="4">[4]</a> "ROS/Tutorials/BuildingPackages - ROS wiki". Documentation - ROS Wiki. http://wiki.ros.org/ROS/Tutorials/BuildingPackages (accedido el 13 de mayo de 2022).
+
 <a id="5">[5]</a> "Vision_opencv - ROS wiki". Documentation - ROS Wiki. http://wiki.ros.org/vision_opencv (accedido el 13 de mayo de 2022).
+
 <a id="6">[6]</a> "Install raspi-config on Ubuntu MATE 20.10 and higher". Ubuntu MATE Community. https://ubuntu-mate.community/t/install-raspi-config-on-ubuntu-mate-20-10-and-higher/23974 (accedido el 13 de mayo de 2022).
+
 <a id="7">[7]</a> "How to install python3-smbus ubuntu package on ubuntu 20.04/ubuntu 18.04/ubuntu 19.04/ubuntu 16.04". Modern Server and App Hosting Control Panel. https://zoomadmin.com/HowToInstall/UbuntuPackage/python3-smbus (accedido el 13 de mayo de 2022).
+
 <a id="8">[8]</a> "Arm_lib". PyPI. https://pypi.org/project/Arm_lib/ (accedido el 13 de mayo de 2022).
  
 ## Autor
