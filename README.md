@@ -36,20 +36,15 @@ Palabras claves en forma Jerarquizada
 - Control de Velocidad
 
 
-Definiendo el tema
-El proyecto consta de ver el funcionamiento, adaptación e implementación de un Brazo robótico 
-cuyo control será realizado en un sistema embebido Raspberry Pi y con una tarjeta de desarrollo 
-programada en Arduino para adaptarlo a una base móvil omnidireccional obteniendo un manipulador móvil. 
+## Definiendo el tema
+
+Se analizó el funcionamiento del robot DOFBOT con el fin de implementar un control utilizando el sistema embebido Raspberry Pi y una tarjeta de desarrollo programada en Arduino para adaptarlo a una base móvil omnidireccional obteniendo un manipulador móvil. 
 
 ## Desarrollo
 Metas del proyecto
-Están relacionadas directamente con las palabras clave citadas al principio del documento, pero el 
-alcance real de este proyecto por los tiempos de realización será en las primeras cinco. En 
-seis semanas, se dejó instalado un sistema funcional en ROS NOETIC que incorpora un paquete dedicado al proyecto, enlazado con otro paquete llamado "vision_opencv" que es el puente entre las imágenes generadas por OpenCV a los mensajes que manda ROS internamente.  
+Están relacionadas directamente con las palabras clave citadas anteriormente, Se presentan los ŕimeros cinco puntos en esta lista. Se dejó instalado un sistema funcional en ROS NOETIC que incorpora un paquete dedicado al proyecto, enlazado con otro paquete llamado "vision_opencv" que es el puente entre las imágenes generadas por OpenCV a los mensajes que manda ROS internamente.  
 
-Tiene un funcionamiento jerárquico para obtener los parámetros de diseño de una base móvil 
-omnidireccional y se obtuvo la información de su funcionamiento mediante la implementación de la 
-ingeniería inversa. 
+Tiene un funcionamiento jerárquico para obtener los parámetros de diseño de una base móvil  omnidireccional y se obtuvo la información de su funcionamiento mediante la implementación de la ingeniería inversa. 
 
 
 Productos 
