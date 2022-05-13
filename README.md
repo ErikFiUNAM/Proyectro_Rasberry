@@ -42,7 +42,20 @@ cuyo control será realizado en un sistema embebido Raspberry Pi y con una tarje
 programada en Arduino para adaptarlo a una base móvil omnidireccional obteniendo un manipulador móvil. 
 
 ## Desarrollo
-
+**Metas del proyecto
+Están relacionadas directamente con las palabras clave citadas al principio del documento, pero el 
+alcance real de este proyecto por los tiempos de realización será en las primeras cinco citadas. En 
+seis semanas, que es el tiempo restante, se debe dejar instalado un sistema funcional en ROS que 
+tendrá un funcionamiento jerárquico para obtener los parámetros de diseño de una base móvil 
+omnidireccional y tener información de su funcionamiento mediante la implementación de la 
+ingeniería inversa. 
+Productos 
+- Repositorio de Github 
+o Instrucciones de como se instala ROS en Raspbian 
+o Implementación de la API de Arm_lib
+o Programas Muestra 
+- Topología del diseño del sistema
+- Parámetros del diseño (Qué se necesita**
 ## Conclusiones
  
 ## Referencias
