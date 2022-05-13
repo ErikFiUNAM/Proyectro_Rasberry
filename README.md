@@ -49,6 +49,8 @@ seis semanas, que es el tiempo restante, se debe dejar instalado un sistema func
 tendrá un funcionamiento jerárquico para obtener los parámetros de diseño de una base móvil 
 omnidireccional y tener información de su funcionamiento mediante la implementación de la 
 ingeniería inversa. 
+
+
 Productos 
 - Repositorio de Github 
 o Instrucciones de como se instala ROS en Raspbian 
