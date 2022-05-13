@@ -34,10 +34,12 @@ Palabras claves en forma Jerarquizada
 - Diseño electrónico (PCB)
 - Comunicación
 - Control de Velocidad
+
+
 Definiendo el tema
 El proyecto consta de ver el funcionamiento, adaptación e implementación de un Brazo robótico 
 cuyo control será realizado en un sistema embebido Raspberry Pi y con una tarjeta de desarrollo 
-Arduino para adaptarlo a una base móvil omnidireccional obteniendo un manipulador móvil. 
+programada en Arduino para adaptarlo a una base móvil omnidireccional obteniendo un manipulador móvil. 
 
 ## Desarrollo
 
