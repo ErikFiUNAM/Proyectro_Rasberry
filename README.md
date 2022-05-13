@@ -23,7 +23,21 @@
 Diseñar un robot omnidireccional mediante el análisis de ingeniería inversa en el DOFBOT y así obtener los parámetros de diseño para la base móvil
 
 ## Introducción
-
+Palabras Clave
+Palabras claves en forma Jerarquizada
+- Diseño Mecatrónico
+- Controlador de Motores
+- Robot Móvil Omnidireccional
+- Sistema Embebido Jerarquico
+- Raspberry con ROS
+- Microcontrolador
+- Diseño electrónico (PCB)
+- Comunicación
+- Control de Velocidad
+Definiendo el tema
+El proyecto consta de ver el funcionamiento, adaptación e implementación de un Brazo robótico 
+cuyo control será realizado en un sistema embebido Raspberry Pi y con una tarjeta de desarrollo 
+Arduino para adaptarlo a una base móvil omnidireccional obteniendo un manipulador móvil. 
 
 ## Desarrollo
 
