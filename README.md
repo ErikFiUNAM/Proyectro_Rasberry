@@ -46,13 +46,14 @@ Están relacionadas directamente con las palabras clave citadas anteriormente, S
 Tiene un funcionamiento jerárquico para obtener los parámetros de diseño de una base móvil  omnidireccional y se obtuvo la información de su funcionamiento mediante la implementación de la ingeniería inversa. 
 
 
-Productos 
-o Repositorio de Github 
-o Instrucciones de como se instala ROS en Raspbian 
-o Implementación de la API de Arm_lib
-o Programas Muestra 
-o Topología del diseño del sistema
-o Parámetros del diseño 
+Productos: 
+
+- Repositorio de Github
+- Instrucciones de como se instala ROS en Raspbian 
+- Implementación de la API de Arm_lib
+- Programas Muestra 
+- Topología del diseño del sistema
+- Parámetros del diseño 
 
 
 ## Conclusiones
