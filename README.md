@@ -16,7 +16,6 @@
 - [Conclusiones](#conclusiones)
 - [Autor](#autor)
 - [Referencias](#referencias)
-- [Bitácora](#bitácora)
 
 
 ## Objetivo
