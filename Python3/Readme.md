@@ -37,7 +37,7 @@ sudo pip3 install Arm_lib
 sudo apt-get install -y python3-smbus
 ```
 
-- Con esto ya se podrían correr los scripts que están en la carpeta, después de haber instalado OpenCV con el paquete de ROS vision_opencv
+- Con esto ya se podrían correr los scripts que están en la carpeta (después de haber instalado OpenCV con el paquete de ROS vision_opencv)
 
 # Referencias 
 <a id="1">[1]</a> "Install raspi-config on Ubuntu MATE 20.10 and higher". Ubuntu MATE Community. https://ubuntu-mrate.community/t/install-raspi-config-on-ubuntu-mate-20-10-and-higher/23974 (accedido el 13 de mayo de 2022).
