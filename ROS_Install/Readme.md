@@ -1,7 +1,7 @@
 # LINEAMIENTOS PARA INSTALAR ROS EN RASPBERRY PI 4/ 4GB RAM
 ## Contenido
 - [Materiales](#materiales)
-- [Instrucciones para instalar Ubuntu Mate RaspBerry](#instrucciones para instalar ubuntu mate raspberry)
+- [Instrucciones para instalar Ubuntu Mate RaspBerry](#instruccionesparainstalarubuntumateraspberry)
 - [Creando un WS en ROS ](#creando un ws en ros )
 - [Hacer un paquete en ROS utilizando OpenCV](#hacer un paquete en ros utilizando ppencv)
 - [Referencias](#referencias)
