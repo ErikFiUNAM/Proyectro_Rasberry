@@ -1,4 +1,11 @@
 # LINEAMIENTOS PARA INSTALAR ROS EN RASPBERRY PI 4/ 4GB RAM
+## Contenido
+- [Materiales](#materiales)
+- [Instrucciones para instalar Ubuntu Mate RaspBerry](#instrucciones para instalar ubuntu mate raspberry)
+- [Creando un WS en ROS ](#creando un ws en ros )
+- [Hacer un paquete en ROS utilizando OpenCV](#hacer un paquete en ros utilizando ppencv)
+- [Referencias](#referencias)
+
 
 ## Materiales 
 Se necesitará :  
@@ -142,6 +149,8 @@ catkin_make
 ```
 Con esto terminado, ya podremos crear nuestros primeros Subcriptores y Publicadores de nuestro paquete usando OpenCV y vision_opencv. Para hacerlos es necesario que se consulte la Wiki de OpenCV ya que es un procedimiento que se sigue de igual forma cada vez que se realiza uno. Así mismo, se deja el WS con la implementación de OpenCV y la API de Arl_lib que es aquella que mueve al manipulador del "bobot" [[4]](#4)
 
+
+# Referencias 
 <a id="1">[1]</a> "Choose an architecture | Download". Ubuntu MATE. https://ubuntu-mate.org/download/ (accedido el 13 de mayo de 2022).
 
 <a id="2">[2]</a>"Raspberry pi OS â raspberry pi". Raspberry Pi. https://www.raspberrypi.com/software/ (accedido el 16 de mayo de 2022).
