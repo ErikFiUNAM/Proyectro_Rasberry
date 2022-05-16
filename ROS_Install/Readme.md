@@ -32,7 +32,7 @@ La descarga y las especificacioens del sistema se pueden visualizar en la págin
 ```
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 ```
-- Instlar las Keys de ROS
+- Instalar las Keys de ROS
 ```
 sudo apt install curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
@@ -95,8 +95,57 @@ roscore
 
 Después de esto ya estaría nuestro WS configurado.
 
+# Hacer un paquete en ROS utilizando OpenCV
+
+- Como ROS debe traducir los mensajes que se mandan en él desde cualquier otra API, existe un puente que se llama CVbridge
+![image](https://user-images.githubusercontent.com/20031100/168516711-0ddebef7-d287-490a-b630-5f91b3846f1f.png)
+
+Para usarlo se debe instalar este paquete dentro del middleware con la siguiente línea: 
+```
+ sudo apt install ros-noetic-vision-opencv
+```
+Este paquete contempla la instalación de OpenCV 4.2 
+
+- Ahora debemos crear un paquete dejando las dependencias para correr nuestros scripts de ROS 
+
+- Debemos ingresar al WS que creamos en un inicio 
+
+```
+ cd ~/"NOMBRE_WS"/src
+```
+- Ahora usando la instrucción "catkin_create_pkg" daremos el nombre del paquete y las dependencias que usaremos: 
+
+```
+ catkin_create_pkg NOMBRE_DEL_PAQUETE std_msgs rospy roscpp
+ 
+ #ESTE ES UN EJEMPLO, NO LO EJECUTES
+ #catkin_create_pkg <NOMBRE_PAQUETE> [depend1] [depend2] [depend3]
+```
+
+- Construyendo el WorkSpace de catkin y haciendo "source" en el archivo Setup
+
+```
+cd ~/NOMBRE_WS
+catkin_make
+```
+
+- Agregando el WS al ambiente de ROS necesitamos hacer Source al archivo generado: 
+```
+. ~/catkin_ws/devel/setup.bash
+```
+
+- Con esto, nuestro paquete ya está creado, lo que sigue sería agregar las dependencias al archivo CMakeLists.txt del paquete que hemos creado cin las siguientes líneas: 
+
+```
+   find_package(OpenCV)
+   include_directories(${OpenCV_INCLUDE_DIRS})
+```
+Con esto terminado, ya podremos crear nuestros primeros Subcriptores y Publicadores de nuestro paquete usando OpenCV y vision_opencv. Para hacerlos es necesario que se consulte la Wiki de OpenCV ya que es un procedimiento que se sigue de igual forma cada vez que se realiza uno. Así mismo, se deja el WS con la implementación de OpenCV y la API de Arl_lib que es aquella que mueve al manipulador del "bobot" [[4]](#4)
+
 <a id="1">[1]</a> "Choose an architecture | Download". Ubuntu MATE. https://ubuntu-mate.org/download/ (accedido el 13 de mayo de 2022).
 
 <a id="2">[2]</a>"Raspberry pi OS â raspberry pi". Raspberry Pi. https://www.raspberrypi.com/software/ (accedido el 16 de mayo de 2022).
 
 <a id="3">[3]</a> "Noetic/Installation/Ubuntu - ROS wiki". Documentation - ROS Wiki. http://wiki.ros.org/noetic/Installation/Ubuntu (accedido el 13 de mayo de 2022).
+
+<a id="4">[4]</a> "ROS/Tutorials/WritingPublisherSubscriber(python) - ROS Wiki". Documentation - ROS Wiki. http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber(python) (accedido el 16 de mayo de 2022).
