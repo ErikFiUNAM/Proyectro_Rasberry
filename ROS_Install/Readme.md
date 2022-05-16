@@ -28,36 +28,36 @@ La descarga y las especificacioens del sistema se pueden visualizar en la págin
 3) Aquí ya podemos empezar la instalación del middleware, para ello se utilizó como referencia la Wiki de ROS para la versión Noetic  [[3]](#3)
 ![image](https://user-images.githubusercontent.com/20031100/168505727-d3e0ff8c-7c7b-46b4-be3c-4be1eea5d205.png)
 
-o Configuración del "sources.list"
+- Configuración del "sources.list"
 ```
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 ```
-o Instlar las Keys de ROS
+- Instlar las Keys de ROS
 ```
 sudo apt install curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 
-o Instalación 
+- Instalación 
   - Actualización de los paquetes de Debian: 
 ```
 sudo apt update
 ```
-o Seleccionando la instalación
+- Seleccionando la instalación
 Como solo necesitamos los elementos básicos para que corra de la forma más ligera posible dentro de la RB, se optó por ROS - Base que no incluye los paquetes de simulación y percepción, solo algunos paquetes y bibliotecas de comunicación.
 
 ```
 sudo apt install ros-noetic-ros-base
 ```
 
-o Configuracipon del Ambiente 
+- Configuracipon del Ambiente 
 se debe hacer "source" en cada terminal en el cual se vaya a utlizar ROS con el siguiente comando: 
 
 ```
 source /opt/ros/noetic/setup.bash
 ```
 
-o Dependencias para construir los paquetes
+- Dependencias para construir los paquetes
 
 ```
 sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
@@ -80,8 +80,20 @@ roscore
 
 # Creando un WS en ROS 
 
+- Usando catkin 
+```
+ mkdir -p ~/"Nombre_del_WS"/src
+ cd ~/"Nombre_del_WS"/
+ catkin_make
+```
 
+- Si miramos dentro del directorio local, ahora están las carpetas de 'build' y 'devel' en ellos existen varios archivos setup.*sh 
+- Debemos continuar haciendo source a nuestro archivo setup
+```
+ source devel/setup.bash
+```
 
+Después de esto ya estaría nuestro WS configurado.
 
 <a id="1">[1]</a> "Choose an architecture | Download". Ubuntu MATE. https://ubuntu-mate.org/download/ (accedido el 13 de mayo de 2022).
 
