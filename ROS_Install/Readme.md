@@ -1,5 +1,6 @@
-## LINEAMIENTOS PARA INSTALAR ROS EN RASPBERRY PI 4/ 4GB RAM
+# LINEAMIENTOS PARA INSTALAR ROS EN RASPBERRY PI 4/ 4GB RAM
 
+## Materiales 
 Se necesitará :  
 - Raspberry pi 4 de 4-8gb ram 
 - Adapatador de SD para PC
@@ -10,6 +11,7 @@ Se necesitará :
 - Teclado (USB) 
 - Mouse (USB)
 
+## Instrucciones para instalar Ubuntu Mate RaspBerry 
 Como el objetivo del proyecto es trabajar con ROS Noetic (y en futuro migrar a ROS2), se optó utilizar una distribución de ubuntu con una interfaz gráfica amigable que soportara dicha versión y LTS. 
 En este caso UBUNTU Mate 20.04 para tiene una distribución para la RaspBerry (RB) en donde el middleware es instalable con soporte hasta el 2023 (se utilizó la versión de 64 bits). 
 
@@ -22,6 +24,7 @@ La descarga y las especificacioens del sistema se pueden visualizar en la págin
 
 2) Después de hacer toda la configuración de la RB con UBUNTU Mate, se deben bloquear las actualizaciones de los Drivers de Bluethoot ya que se han reportado que existen bugs al momento de hacerlo, de preferencia solo hacerlo con la interfaz gráfica de paquetes. 
 
+# Instalación de ROS
 3) Aquí ya podemos empezar la instalación del middleware, para ello se utilizó como referencia la Wiki de ROS para la versión Noetic  [[3]](#3)
 ![image](https://user-images.githubusercontent.com/20031100/168505727-d3e0ff8c-7c7b-46b4-be3c-4be1eea5d205.png)
 
@@ -70,9 +73,18 @@ sudo rosdep init
 rosdep update
 ```
 
+- En este momento ya estaríamos listos para poder verificar que ROS Noetic esté bien instalado corriendo el siguiente comando: 
+```
+roscore
+```
+
+# Creando un WS en ROS 
+
 
 
 
 <a id="1">[1]</a> "Choose an architecture | Download". Ubuntu MATE. https://ubuntu-mate.org/download/ (accedido el 13 de mayo de 2022).
+
 <a id="2">[2]</a>"Raspberry pi OS â raspberry pi". Raspberry Pi. https://www.raspberrypi.com/software/ (accedido el 16 de mayo de 2022).
+
 <a id="3">[3]</a> "Noetic/Installation/Ubuntu - ROS wiki". Documentation - ROS Wiki. http://wiki.ros.org/noetic/Installation/Ubuntu (accedido el 13 de mayo de 2022).
