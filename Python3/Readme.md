@@ -3,7 +3,7 @@
 # Contenido 
 
 - [Consideraciones para la Raspberry usando Ubuntu Mate](#consideraciones-para-la-raspberry-usando-ubuntu-mate)
-- [Instalando API Arm_ Lib y Smbus](#instalando-api-arm_lib-y-smbus)
+- [Instalando API Arm_ Lib y Smbus](#instalando-api-arm_-lib-y-smbus)
 - [Referencias](#referencias)
 # Consideraciones para la Raspberry usando Ubuntu Mate
 
