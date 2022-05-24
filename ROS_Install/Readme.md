@@ -29,7 +29,7 @@ La descarga y las especificacioens del sistema se pueden visualizar en la págin
 
 ![image](https://user-images.githubusercontent.com/20031100/168504728-dd58fe38-1a89-44d0-b0cc-98bc4ec656cb.png)
 
-2) Después de hacer toda la configuración de la RB con UBUNTU Mate, se deben bloquear las actualizaciones de los Drivers de Bluethoot ya que se han reportado que existen bugs al momento de hacerlo, de preferencia solo hacerlo con la interfaz gráfica de paquetes. 
+2) Después de hacer toda la configuración de la RB con UBUNTU Mate, se deben bloquear las actualizaciones de los Drivers de Bluethoot ya que se han reportado que existen bugs al momento de hacerlo, de preferencia solo hacerlo con la interfaz gráfica de paquetes. (como se bloquea, aclaralo para los novatos)
 
 # Instalación de ROS
 3) Aquí ya podemos empezar la instalación del middleware, para ello se utilizó como referencia la Wiki de ROS para la versión Noetic  [[3]](#3)
