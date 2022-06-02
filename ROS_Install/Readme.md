@@ -122,6 +122,8 @@ Este paquete contempla la instalación de OpenCV 4.2
 ```
 - Ahora usando la instrucción "catkin_create_pkg" daremos el nombre del paquete y las dependencias que usaremos: 
 
+# Después de este punto no es claro
+
 ```
  catkin_create_pkg NOMBRE_DEL_PAQUETE std_msgs rospy roscpp
  
