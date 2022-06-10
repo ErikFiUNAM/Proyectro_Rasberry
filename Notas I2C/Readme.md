@@ -9,7 +9,8 @@ Inter Integrated Circuit, es un bus serie desarrollado por Phillips semiconducto
 
 Por los dos Hilos se produce la comunicación serie, bit a bit (unidad mínima de información). 
 Donde: 
-    - SCL, (Serial Clock) Es una señal de reloj que se utiliza para la sincronización 
+    - SCL, (Serial Clock) Es una señal de reloj que se utiliza para la sincronización
+    
     - SDA (Serial Data) Es la línea para la transferencia serie de Datos 
     
     
