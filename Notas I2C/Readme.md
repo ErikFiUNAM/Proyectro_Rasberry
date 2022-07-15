@@ -22,3 +22,6 @@ Los dispositivos concetados en el Bus I2C mantiene una relación entre ellos de 
 
 La línea SDA es bidireccional, por lo que el maestro y el esclavo actúan como transmisores o receptores de datos.
 
+Es necesario considerar que dentro del cableado del circuito será prudente utilizar dos resistencias en configuración Pull-Up ya que dos o más señales a través del mismo cable pueden causar conflicto.
+
+Se pueden conectar 128 dispositivos a la vez ya que las direcciones que maneja el BUS son de 7 bits. Aunque este tiene reservado 16 direccioens por lo que al final se pueden usar un máximo de 112 nodos entre sí. 
