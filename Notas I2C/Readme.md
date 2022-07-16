@@ -38,9 +38,62 @@ Se pueden conectar 128 dispositivos a la vez ya que las direcciones que maneja e
 
 
 
-## Bus I2C en RBP
+## Bus I2C en RBP y Arduino
+Establecer comunicación entre la Raspberry Pi y Alguna tarjeta controladora puede ser útil ya que se puede aporvechar la potencia de computaciín y las entradas y salidas de cualquier tarjeta/microcontrolador. Se recomienda que la Raspberry y la tarjeta de control estén lo más cerca posible ya que al final los datos viajaran por un BUS de datos en dos cables y entre más largo sea, podría haber problemas de comunicación entre ellos. 
 
-## Bus I2C en Arduino
+
+### Hardware 
+- Computadora
+- Arduino UNO x1
+- Raspberry Pi 3B+
+- Cables de arranque x3
+
+
+### Diagrama 
+- SDA BCM2(RPI) <-> SDA A4(Arduino)
+- SCL BCM3(RPI) <-> SCL A5(Arduino)
+- GND (RPI) <-> GND(Arduino)
+
+
+![raspberry-pi-arduino-i2c-communication_bb](https://user-images.githubusercontent.com/20031100/179326716-03da0167-f8f1-4987-b03f-629e2c615427.png)
+
+
+### Configuración de la Raspberry 
+Para usar la interfaz I2C de Raspberry, debe estar habilitada en el menú de configuración. Se accede a él con el siguiente comando:
+
+```
+sudo raspi-config
+```
+
+(esta copnfiguración se detalla en la sección del repositorio sobre la instalación de UBUNTU MATE  de la raspberry) 
+
+Se debe instalar también las herramientas para poder "interactuar" con el bus de Datos de la Raspberry. Este paquere se llama "i2c-tools". Para ello debemos ejecutar el siguiente comando: 
+
+
+```
+sudo apt-get install -y i2c-tools
+```
+Para ver los dispositivos conectados en el BUS i2c se usa el siguiente comando: 
+
+```
+i2cdetect -y 1
+```
+Obteniendo en la terminal algo similar a esto
+
+```
+pi@raspberrypi:~ $ i2cdetect -y 1
+0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- 0b -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+```
+
+
 
 ## Bus I2C en NODEMCU
 
