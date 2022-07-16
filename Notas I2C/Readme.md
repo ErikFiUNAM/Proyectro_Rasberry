@@ -4,9 +4,9 @@
 ## Definición
 
 - [Definición](#definicion)
-- [Bus I2C en RBP](#)
-- [Bus_I2C en Arduino](#)
-- [Bus I2C en NODEMCU](#)
+- [Bus I2C en RBP](#bus-i2c-en-rbp)
+- [Bus I2C en Arduino](#bus-i2c-en-arduino)
+- [Bus I2C en NODEMCU](#bus-i2c-en-nodemcu)
 - [Conclusiones](#conclusiones)
 - [Autor](#autor)
 - [Referencias](#referencias)
