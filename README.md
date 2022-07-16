@@ -1,4 +1,4 @@
-# Proyecto_Rasberry
+# Manipulador Móvil "Babas"
 
 
 ## 
@@ -6,7 +6,7 @@
 | Código | Description |
 | ------:| ----------- |
 | ***Asignatura*** | Código del Trabajo o Número de Tarea | 
-| **MRG-C002** | Robótica Móvil - Bobot - Módulo 1 |
+| **MRG-C002** | Robótica Móvil - Babas -  V1 |
 
 ## Contenido
 
