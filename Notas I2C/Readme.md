@@ -78,11 +78,11 @@ Para ver los dispositivos conectados en el BUS i2c se usa el siguiente comando:
 ```
 i2cdetect -y 1
 ```
-Obteniendo en la terminal algo similar a esto
+Obteniendo en la terminal algo similar a esto:
 
 ```
 pi@raspberrypi:~ $ i2cdetect -y 1
-0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+    0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- 0b -- -- -- --
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -93,6 +93,70 @@ pi@raspberrypi:~ $ i2cdetect -y 1
 70: -- -- -- -- -- -- -- --
 ```
 
+Deberemos seguir con la instalación de la biblioteca smbus2 que permite gestionar la comunicación i2c en la Raspberry Pi: 
+```
+pip3 install smbus2
+```
+
+Después de haber instalado las bibliotecas y los paquetes anteriores debemos escribir los códigos para hacer nuesto "Hola Mundo" del i2c de la raspberry: 
+
+El siguiente código es hecho en python3, habiliatndo la configuración del maestro (la Raspberry) hacia el dispositivo esclavo (el Arduino) 
+
+((Poner el código modificado de la raspberry)) 
+
+```
+from smbus import SMBus
+
+addr = 0x8 # bus address
+bus = SMBus(1) # indicates /dev/ic2-1
+bus.write_byte(addr, 0x1) # switch it on
+input("Press return to exit")
+bus.write_byte(addr, 0x0) # switch it on
+
+```
+
+y el siguiente código será el esclavo (el Arduino) recibiendo los datos para enceder y apagar un led dentro de la tarjeta (recibiendo 1 y 0) con la biblioteca "wire.h" de arduino, iniciando la comunicación i2c. 
+```
+#include <Wire.h> 
+static_assert(LOW == 0, "Esperando LOW para que sea 0"); 
+int ledPin = 13;
+void setup() 
+{
+  Wire.begin(0x8); 
+  Wire.onReceive(receiveEvent); 
+  pinMode(ledPin, OUTPUT); 
+  digitalWrite(ledPin, LOW); 
+  Serial.begin(9600);
+}
+
+
+void loop() {
+delay(100);
+}
+int receiveEvent(){
+  while(Wire.available()){
+    int c = Wire.read(); 
+    Serial.println(c);
+    return c; 
+    digitalWrite(ledPin, c);
+  } 
+}
+
+```
+
+Conectando la Raspberry y el Arduino correctamente, en el bus de Datos debería verse la dirección 0x8 del bus encendida, ya que así fue puesto en el código del esclavo. (Algunos sensores/perifericos ya tienen direcciones predeterminadas)
+```
+pi@raspberrypi:~ $ i2cdetect -y 1
+    0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- 08 -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+```
 
 
 ## Bus I2C en NODEMCU
@@ -104,7 +168,19 @@ pi@raspberrypi:~ $ i2cdetect -y 1
 
 ## Conclusiones
  
-## Referencias
+## Referencias (Configurar Referencias)
+https://www.youtube.com/watch?v=RkQbK9ek59c&ab_channel=ScottyD
+https://www.aranacorp.com/es/comunicacion-i2c-entre-raspberry-pi-y-arduino/
+
+
+https://www.allaboutcircuits.com/technical-articles/i2c-design-mathematics-capacitance-and-resistance/
+https://www.todopic.com.ar/foros/index.php?topic=5979.0
+https://www.diarioelectronicohoy.com/blog/introduccion-al-i2c-bus
+https://aprendiendoarduino.wordpress.com/2017/07/09/i2c/#:~:text=I2C%20es%20un%20bus%20de,velocidades%20de%203.4%20Mbit%2Fs.
+https://programarfacil.com/blog/arduino-blog/comunicacion-i2c-con-arduino/
+
+
+
 <a id="1">[1]</a> "Choose an architecture | Download". Ubuntu MATE. https://ubuntu-mate.org/download/ (accedido el 13 de mayo de 2022).
 <a id="2">[2]</a> "Noetic/Installation/Ubuntu - ROS wiki". Documentation - ROS Wiki. http://wiki.ros.org/noetic/Installation/Ubuntu (accedido el 13 de mayo de 2022).
 
